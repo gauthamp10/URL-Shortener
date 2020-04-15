@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Shortify</title>
+    <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/doodle/48/000000/internet--v3.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.min.css') }}">
+	<script src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
+</head>
+
+<body>
+    <div class="login-clean">
+        <a href="https://u-l.herokuapp.com/" style="text-decoration: none;"><h2 class="text-center" style="padding-bottom:15px;color:#ffffff;">Shortify - URL Shortener</h2></a>
+        
+        <form method="post">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><a href="https://u-l.herokuapp.com/" style="text-decoration: none;"><img src="https://img.icons8.com/plasticine/100/000000/domain.png"></a></div><input class="form-control" type="url" name="url" placeholder="Paste your link">
+            <h4 class="text-center text-success">{{title}}</h4>
+            <center><label><a href="{{link}}" target="_blank">{{link}}</a></label></center>
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Shrink Link</button></div>
+            <div style="text-align:center;font-size:12px;"><span class="text-muted" style="/*text-align:center;*//*color:12px;*/">An ad-free anonymous open-source URL shortening service</span></div><a class="text-success forgot" href="https://gauthamp10.github.io"><img src="https://img.icons8.com/doodle/48/000000/internet--v3.png"></a></form>
+    </div>
+    <div class="footer-basic" style="height:180px;padding:20px;">
+        <footer>
+            <div class="social">
+                <p class="copyright">Gautham Prakash © 2019</p><a href="https://github.com/gauthamp10"><i class="icon ion-social-github"></i></a><a href="https://www.linkedin.com/in/gautham-prakash-207442126/"><i class="icon ion-social-linkedin"></i></a><a href="https://twitter.com/Gauthamprakash1"><i class="icon ion-social-twitter"></i></a>
+                <a
+                    href="https://www.facebook.com/gautham.prakash1"><i class="icon ion-social-facebook"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+<script type="text/javascript">
+	document.getElementById('timestamp').value = moment().format('MMMM Do YYYY, h:mm:ss a');
+        </script>
+</html>
