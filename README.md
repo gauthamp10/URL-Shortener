@@ -1,4 +1,7 @@
 # shortify
+
+![visitors](https://visitor-badge.glitch.me/badge?page_id=gauthamp10.URL-Shortener)
+
 An ad-free anonymous open-source URL shortening service with mongo cloud as backend.
 
 ### Screenshot
