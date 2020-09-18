@@ -1,3 +1,4 @@
+"""A url shortener flask app"""
 import re
 import os
 import string
