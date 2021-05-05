@@ -10,8 +10,6 @@ An ad-free anonymous open-source URL shortening service with mongo cloud as back
 
 ### Live : [Click to shorten url](https://u-l.herokuapp.com/)
 
-[![HitCount](http://hits.dwyl.com/gauthamp10/URL-Shortener.svg)](http://hits.dwyl.com/gauthamp10/URL-Shortener)
-
 
 ### Author
 
