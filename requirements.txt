@@ -1,4 +1,4 @@
-Flask==1.1.1
+Flask==2.3.2
 pymongo==3.9.0
 gunicorn==19.9.0
 dnspython==1.16.0
